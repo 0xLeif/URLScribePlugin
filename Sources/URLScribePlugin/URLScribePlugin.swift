@@ -39,13 +39,6 @@ public struct URLScribePlugin: ScribePlugin {
         self.headerFields = headerFields
         self.outputFormatter = outputFormatter
         self.responseHandler = responseHandler
-
-        URLScribePlugin(
-            url: <#T##URL#>,
-            headerFields: <#T##[String : String]#>,
-            outputFormatter: <#T##(Scribe.PluginPayload) async throws -> Data#>,
-            responseHandler: <#T##(DataResponse) async throws -> Void#>
-        )
     }
 
     /// Handles the given `Scribe.PluginPayload` by sending it to the remote URL.
